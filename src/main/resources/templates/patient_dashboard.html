@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="/css/patientcss.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section: Profile -->
+        <div class="left-section">
+            <h2>Patient Profile</h2>
+            <div class="profile-details">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Age:</strong> 30</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> +1234567890</p>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Check List and Book Appointment -->
+            <div class="section" id="book-appointment">
+                <h2>Check List & Book Appointment</h2>
+                <select id="specialization">
+                    <option value="">Select Specialization</option>
+                    <option value="Cardiologist">Cardiologist</option>
+                    <option value="Dentist">Dentist</option>
+                    <option value="Dermatologist">Dermatologist</option>
+                </select>
+                <table id="doctor-list">
+                    <thead>
+                        <tr>
+                            <th>Doctor Name</th>
+                            <th>Specialization</th>
+                            <th>Book Appointment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic content from JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Start Chat Section -->
+            <div class="section" id="start-chat">
+                <h2>Start Chat</h2>
+                <button onclick="startChat()">Start Chat</button>
+            </div>
+
+            <!-- View History Section -->
+            <div class="section" id="view-history">
+                <h2>View History</h2>
+                <ul id="appointment-history">
+                    <!-- Static data for now -->
+                    <li>Appointment with Dr. Smith (Cardiologist) on 2024-09-15</li>
+                    <li>Appointment with Dr. Johnson (Dentist) on 2024-08-10</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/css/patientjs.js"></script>
+</body>
+</html>

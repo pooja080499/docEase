@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - docEase</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div th:replace="base :: header"></div>
+    
+    <!-- Centered About Section -->
+    <div class="container about-container"  style="margin-left:30%; width:600px;">
+        <section>
+            <h2>About docEase</h2>
+            <p>
+                docEase is an online doctor consultation system designed to simplify the process of connecting patients with healthcare professionals.
+                Our platform aims to provide easy access to medical consultations, helping patients manage appointments, medical records, and communication with doctors from the comfort of their homes.
+            </p>
+            <h3>Key Features of docEase</h3>
+            <ul>
+                <li>Online doctor and patient profile management</li>
+                <li>Appointment scheduling system</li>
+                <li>Real-time chat for patient-doctor consultations</li>
+                <li>Secure login and registration</li>
+                <li>Comprehensive dashboard for doctors to manage patient information</li>
+            </ul>
+            <p>
+                Our mission is to make healthcare more accessible and convenient for everyone, leveraging modern technology to bridge the gap between doctors and patients.
+            </p>
+            <p>
+                We hope docEase will empower users by providing a streamlined, efficient, and user-friendly platform to manage their healthcare needs.
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <div th:replace="base :: footer"></div>
+</body>
+</html>
